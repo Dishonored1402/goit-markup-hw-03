@@ -44,6 +44,12 @@ body {
   text-decoration: none;
 }
 
+.logo,
+.logo-footer,
+.logo-main {
+  display: inline-block;
+}
+
 .logo-main {
   margin-right: 76px;
 }
