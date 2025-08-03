@@ -1,7 +1,13 @@
-
 h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+  margin: 0;
 }
 
 .container {
@@ -12,6 +18,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding-right: 15px;
 }
 
+/* Header */
 .header-main {
   border-bottom: 1px solid #e7e9fc;
   background-color: #fff;
@@ -37,6 +44,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
   text-decoration: none;
 }
 
+.logo-main {
+  margin-right: 76px;
+}
+
 .logo-span,
 .logo-span-footer {
   color: #2e2f42;
@@ -52,7 +63,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .nav-list {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 .nav-link {
   color: #2e2f42;
@@ -92,6 +102,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   color: #404bbf;
 }
 
+/* Hero */
 .section-hero {
   background-color: #2e2f42;
   text-align: center;
@@ -104,6 +115,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn {
   background-color: #4d5ae5;
@@ -119,12 +133,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
   cursor: pointer;
   transition: background-color 0.2s;
   box-shadow: 0px 4px 4px rgba(46, 47, 66, 0.08);
+  display: block;
+  min-width: 169px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
 }
 
+/* Секции */
 .section-adv,
 .section-team,
 .section-portfolio {
@@ -141,6 +160,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin-bottom: 72px;
 }
 
+/* Advantages (Features) */
 .adv-list {
   display: flex;
   gap: 24px;
@@ -163,6 +183,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   letter-spacing: 0.02em;
 }
 
+/* Team */
 .section-team {
   background-color: #f4f4fd;
 }
@@ -201,6 +222,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   letter-spacing: 0.02em;
 }
 
+/* Portfolio */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -239,6 +261,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   letter-spacing: 0.02em;
 }
 
+/* Footer */
 .footer-main {
   background-color: #2e2f42;
   color: #ffffff;
@@ -265,4 +288,18 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* Скрытие заголовков по ТЗ GoIT */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0, 0, 0, 0) !important;
+  overflow: hidden !important;
 }
