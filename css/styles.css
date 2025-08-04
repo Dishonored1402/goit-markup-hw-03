@@ -282,6 +282,7 @@ body {
 
 .portfolio-info {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-img {
@@ -314,6 +315,15 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
+
+.footer-main .address-link {
+  display: inline-block;
+}
+
+.footer-main .logo-footer {
+  display: inline-block;
+}
+
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
