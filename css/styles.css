@@ -1,7 +1,19 @@
-/* базовый сброс */
-* { box-sizing: border-box; }
 
-h1,h2,h3,h4,h5,h6,p,ul { margin:0; padding:0; }
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -10,7 +22,6 @@ body {
   margin: 0;
 }
 
-/* контейнер: точно 1158px по ТЗ и центрирование */
 .container {
   width: 1158px;
   max-width: 1158px;
@@ -20,7 +31,6 @@ body {
   padding-right: 15px;
 }
 
-/* Header */
 .header-main {
   border-bottom: 1px solid #e7e9fc;
   background-color: #fff;
@@ -29,7 +39,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* height: 72px; удалено, чтобы высота определялась контентом */
 }
 
 .logo,
@@ -47,14 +56,26 @@ body {
 
 .logo,
 .logo-footer,
-.logo-main { display: inline-block; }
+.logo-main {
+  display: inline-block;
+}
 
-.logo-main { margin-right: 76px; }
+.logo-main {
+  margin-right: 76px;
+}
 
-.logo-span { color: #2e2f42; }
-.logo-span-footer { color: #f4f4fd; }
+.logo-span,
+.logo-span-footer {
+  color: #2e2f42;
+}
+.logo-span-footer {
+  color: #f4f4fd;
+}
 
-.nav-main { display: flex; align-items: center; }
+.nav-main {
+  display: flex;
+  align-items: center;
+}
 .nav-list {
   display: flex;
   gap: 40px;
@@ -73,7 +94,9 @@ body {
   display: inline-block;
 }
 .nav-link:hover,
-.nav-link:focus { color: #404bbf; }
+.nav-link:focus {
+  color: #404bbf;
+}
 
 .address-main .address-list,
 .address-footer .address-list {
@@ -83,8 +106,11 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .address-main,
-.address-footer { font-style: normal; }
+.address-footer {
+  font-style: normal;
+}
 
 .address-link {
   font-size: 16px;
@@ -96,9 +122,10 @@ body {
   display: inline-block;
 }
 .address-link:hover,
-.address-link:focus { color: #404bbf; }
+.address-link:focus {
+  color: #404bbf;
+}
 
-/* Hero / секции */
 .section-hero {
   background-color: #2e2f42;
   text-align: center;
@@ -135,12 +162,15 @@ body {
   margin-right: auto;
 }
 .hero-btn:hover,
-.hero-btn:focus { background-color: #404bbf; }
+.hero-btn:focus {
+  background-color: #404bbf;
+}
 
-/* Общие секции */
 .section-adv,
 .section-team,
-.section-portfolio { padding: 120px 0; }
+.section-portfolio {
+  padding: 120px 0;
+}
 .section-title {
   font-size: 36px;
   font-weight: 700;
@@ -152,7 +182,6 @@ body {
   margin-bottom: 72px;
 }
 
-/* Advantages */
 .adv-list {
   display: flex;
   gap: 24px;
@@ -161,22 +190,30 @@ body {
   margin: 0;
 }
 @supports not (gap: 24px) {
-  .adv-list { gap: 0; }
-  .adv-list > .adv-item { margin-right: 24px; }
-  .adv-list > .adv-item:last-child { margin-right: 0; }
+  .adv-list {
+    gap: 0;
+  }
+  .adv-list > .adv-item {
+    margin-right: 24px;
+  }
+  .adv-list > .adv-item:last-child {
+    margin-right: 0;
+  }
 }
 .adv-item {
-  width: calc((100% - 72px) / 4);
-  flex-basis: calc((100% - 72px) / 4);
+  flex: 0 0 calc((100% - 72px) / 4);
 }
-.adv-subtitle { margin-bottom: 8px; }
+.adv-subtitle {
+  margin-bottom: 8px;
+}
 .adv-text {
   font-size: 14px;
   line-height: 1.5;
 }
 
-/* Team */
-.section-team { background-color: #f4f4fd; }
+.section-team {
+  background-color: #f4f4fd;
+}
 .team-list {
   display: flex;
   gap: 24px;
@@ -200,9 +237,11 @@ body {
   margin-bottom: 32px;
   display: block;
 }
+
 .team-item > .team-info {
   padding: 32px 0;
 }
+
 .team-name {
   font-size: 20px;
   font-weight: 500;
@@ -220,7 +259,6 @@ body {
   text-align: center;
 }
 
-/* Portfolio */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -233,7 +271,7 @@ body {
 .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
   background-color: #fff;
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc; 
   box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
     0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
   display: flex;
@@ -241,14 +279,15 @@ body {
   align-items: center;
   padding-bottom: 32px;
 }
+
+.portfolio-info {
+  padding: 32px 16px;
+}
+
 .portfolio-img {
   display: block;
   width: 100%;
   height: auto;
-}
-.portfolio-info {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
 }
 .portfolio-name {
   font-size: 20px;
@@ -265,7 +304,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Footer */
 .footer-main {
   background-color: #2e2f42;
   color: #ffffff;
@@ -294,7 +332,6 @@ img {
   height: auto;
 }
 
-/* Скрытие для доступности */
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
