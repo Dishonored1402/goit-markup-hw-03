@@ -50,11 +50,6 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-}
-
-.logo,
-.logo-footer,
-.logo-main {
   display: inline-block;
 }
 
@@ -116,7 +111,6 @@ body {
   color: #434455;
   text-decoration: none;
   transition: color 0.2s;
-  display: inline-block;
 }
 .address-link:hover,
 .address-link:focus {
