@@ -308,7 +308,7 @@ body {
   align-items: flex-start;
 }
 
-.container a {
+.footer-main .container a {
   display: inline-block;
 } 
 
