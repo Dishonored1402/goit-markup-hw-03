@@ -111,6 +111,7 @@ body {
   color: #434455;
   text-decoration: none;
   transition: color 0.2s;
+  display: inline-block;
 }
 .address-link:hover,
 .address-link:focus {
@@ -308,13 +309,11 @@ body {
   align-items: flex-start;
 }
 
-.footer-main a{
+.logo-footer {
+  margin-bottom: 16px;
   display: inline-block;
 }
 
-.logo-footer {
-  margin-bottom: 16px;
-}
 .footer-text {
   max-width: 264px;
   margin-bottom: 16px;
