@@ -97,7 +97,7 @@ body {
 }
 
 .address-main .address-list,
-.address-footer .address-list {
+.address-list {
   display: flex;
   gap: 40px;
   list-style: none;
@@ -105,8 +105,7 @@ body {
   margin: 0;
 }
 
-.address-main,
-.address-footer {
+.address-main{
   font-style: normal;
 }
 
