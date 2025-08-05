@@ -22,8 +22,7 @@ body {
 }
 
 .container {
-  width: 1158px;
-  max-width: 1158px;
+  max-width: 1128px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -282,6 +281,7 @@ body {
 .portfolio-info {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-img {
