@@ -316,7 +316,7 @@ body {
 }
 
 .footer-main .address-link {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .footer-main .logo-footer {
