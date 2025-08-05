@@ -314,16 +314,11 @@ body {
   align-items: flex-start;
 }
 
-.footer-main .address-link {
-  display: inline-block;
-}
-
-.footer-main .logo-footer {
+.footer-main a{
   display: inline-block;
 }
 
 .logo-footer {
-  display: inline-block;
   margin-bottom: 16px;
 }
 .footer-text {
